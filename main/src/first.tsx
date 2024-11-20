@@ -1,5 +1,5 @@
 export function Profile() {
-  return <img src="./" alt="m" />;
+  return <img src="./" alt="text" />;
 }
 export default function Gallery() {
   return (

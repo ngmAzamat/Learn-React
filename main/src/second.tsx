@@ -1,4 +1,4 @@
-function Avatar(props) {
+export function Avatar(props: any) {
   let person = props.person;
   let size = props.size;
   return (
@@ -12,7 +12,7 @@ function Avatar(props) {
   );
 }
 
-export default function Profile() {
+export default function Profiles() {
   return (
     <Avatar size={100} person={{ name: "the one ring", imageId: "jfey3673" }} />
   );

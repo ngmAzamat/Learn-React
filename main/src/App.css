@@ -1,0 +1,21 @@
+.header {
+  margin: 0;
+  height: 70px;
+  width: 19%;
+  text-align: center;
+  border-bottom: 4px solid silver;
+  background-color: #333;
+  color: #fff;
+  line-height: 70px;
+}
+
+.container {
+  display: flex;
+}
+
+.header > button {
+  background-color: transparent;
+  border: none;
+  color: aqua;
+  text-decoration: none;
+}
