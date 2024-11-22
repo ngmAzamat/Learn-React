@@ -1,5 +1,5 @@
 // import React from "React";
-export default function buttons() {
+export default function Button() {
   return (
     <button
       onClick={() => {

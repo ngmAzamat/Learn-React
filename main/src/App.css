@@ -1,7 +1,7 @@
 .header {
   margin: 0;
   height: 70px;
-  width: 19%;
+  width: 100%;
   text-align: center;
   border-bottom: 4px solid silver;
   background-color: #333;
@@ -13,9 +13,7 @@
   display: flex;
 }
 
-.header > button {
-  background-color: transparent;
-  border: none;
+a {
   color: aqua;
   text-decoration: none;
 }
