@@ -15,7 +15,7 @@ export default function App() {
   const Bar = (
     <div className="container">
       <div className="header">
-        <NavLink to="/likes">Likes</NavLink>
+        <NavLink to="/likes">Likes!!!!!!</NavLink>
         <NavLink to="/useStates">useStates</NavLink>
         <NavLink to="/StopDefault">StopDefault</NavLink>
         <NavLink to="/Eventpropagation">Eventpropagation</NavLink>
