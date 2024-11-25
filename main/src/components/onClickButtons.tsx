@@ -8,7 +8,7 @@ interface a {
 function ButtonWithotPropagation({ onClick, children }: a) {
   return <button onClick={onClick}>{children}</button>;
 }
-export default function Eventpropagation() {
+export default function onClickButtons() {
   <div
     className=""
     onClick={() => {
