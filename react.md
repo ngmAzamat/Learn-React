@@ -122,3 +122,15 @@ function first({ props1, props2 }: firsts) {}
 2. особенность tsx: когда для useState указываем Тип надо писать Тип в <>:
 
 const [data, setData] = useState<number>(0)
+
+### деструктуризация
+
+const numbers = [1,2,3];
+const [one,two,three] = numbers;
+one
+
+const arr = ['hello', function setHello() { console.log('hello') },15]
+
+const [message, setMessage, age] = arr;
+
+так работает useState() - функция которая с помощью Деструктуризации становится - const [message, setMessage] = useState(0);
