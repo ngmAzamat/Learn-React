@@ -8,7 +8,7 @@ interface a {
 function ButtonWithotPropagation({ onClick, children }: a) {
   return <button onClick={onClick}>{children}</button>;
 }
-export default function onClickButtons() {
+export default function Counters() {
   <div
     className=""
     onClick={() => {

@@ -28,3 +28,97 @@ a {
   color: aqua;
   text-decoration: none;
 }
+
+.open {
+  display: flex !important;
+}
+
+.burger {
+  display: flex;
+  position: relative;
+  z-index: 50;
+  justify-content: flex-end;
+  width: 30px;
+  height: 18px;
+}
+.burger span {
+  height: 2px;
+  width: 100%;
+  color: #000;
+  transform: scale(1);
+}
+
+.burger::before,
+.burger::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 100%;
+  background-color: #003cff;
+  transition: all 0.3s ease 0s;
+}
+
+.burger::before {
+  top: 0;
+}
+.burger::after {
+  bottom: 0;
+}
+.burger.active span {
+  transform: scale(0);
+}
+
+.burger.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translate(0, 50%);
+}
+
+@media (max-width: 2000px) {
+  .burger {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    padding: 50px 40px;
+    z-index: 50;
+    overflow-y: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    animation: BurgerAnimation 0.4s;
+  }
+  nav ul {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@keyframes BurgerAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

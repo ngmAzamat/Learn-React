@@ -10,7 +10,7 @@ export default function SecondState() {
   function handleMoreClick() {
     SetShowMore(!ShowMore);
   }
-  let general = GeneralList[index];
+  let general = GeneralList[1];
   return (
     <>
       <button onClick={handleClick}>Next</button>

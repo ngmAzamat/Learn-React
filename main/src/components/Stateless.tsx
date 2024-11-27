@@ -5,7 +5,7 @@ export default function Stateless() {
   function handleClick() {
     index = index + 1;
   }
-  let general = GeneralList[index];
+  let general = GeneralList[1];
   return (
     <>
       <button onClick={handleClick}>Next</button>
